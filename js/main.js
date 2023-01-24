@@ -64,14 +64,14 @@ $(document).ready(function () {
   $(".menu-btn").on("click", function (e) {
     $(".header-nav").fadeToggle(300);
     $(".overlay").fadeToggle(300);
-    $(".header-nav-list").toggleClass("active");
+    $(".menu-cont").toggleClass("active");
     $(".menu-btn").toggleClass("active");
     $("body").toggleClass("overflow");
   });
   $(".overlay").on("click", function (e) {
     $(".header-nav").fadeOut(300);
     $(".overlay").fadeOut(300);
-    $(".header-nav-list").removeClass("active");
+    $(".menu-cont").removeClass("active");
     $(".menu-btn").removeClass("active");
     $("body").removeClass("overflow");
   });
